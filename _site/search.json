@@ -11,20 +11,27 @@
     "href": "index.html",
     "title": "Naina Sharma",
     "section": "",
-    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+    "text": "Naina Sharma is a Statistics and Data Science and Political Science student at the University of California, Los Angeles. Download My Resume"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Naina Sharma",
     "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul, MN B.A in Economics | Sept 2007 - June 2011"
+    "text": "Education\nUniversity of California, Los Angeles | Los Angeles, CA\nStatistics and Data Science B.S. | Sept 2021 - June 2025\nPolitical Science B.A. | Sept 2021 - June 2025"
   },
   {
     "objectID": "index.html#experience",
     "href": "index.html#experience",
     "title": "Naina Sharma",
     "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+    "text": "Experience\nUCLA Political Science Department | Undergraduate Research Assistant | Jan 2024 – Present\nAt UCLA, I assist in machine learning research by web scraping image data and validating models used for computer vision applications. My work contributes to developing algorithms that estimate topic vectors and causal effects for image-based data.\nPricewaterhouseCoopers | Financial Risk Consulting Intern | June 2024 – Aug 2024\nDuring my internship at PwC, I supported financial risk analysis by creating internal liquidity stress test procedures and optimizing regression models for compliance with federal regulations. I also performed data reconciliation across multiple sources to ensure accuracy in risk assessments.\nBank Information Center | Social Inclusion Fellow | June 2022 – March 2024\nI worked on policy analysis and advocacy, researching the World Bank’s gender strategy and publishing reports on the social inclusion compliance of various development projects. My work involved monitoring international funding projects and presenting recommendations to high-level stakeholders.\nUnited Way of Santa Cruz County | Intern | June 2020 – Aug 2020\nI conducted research on social determinants of health and race relations while contributing to public outreach efforts. I also designed and wrote social media content to increase community engagement with the organization’s initiatives."
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Naina Sharma",
+    "section": "Projects",
+    "text": "Projects\nHere is my first project. Here is my second project."
   }
 ]
