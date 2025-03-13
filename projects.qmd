@@ -1,3 +1,5 @@
+#### My projects
+
 See all my projects here:
 
 -   [Cobalt Extraction in the Democratic Republic of the Congo](/projects/project_1.qmd)
@@ -7,3 +9,33 @@ See all my projects here:
 -   [Predictive Analysis of Obesity Diagnostic](/projects/stats101cfinal.qmd)
 
 -   [Predicting Student Alcohol Consumption](/projects/stats112.qmd)
+
+#### Relevant coursework
+
+-   Pol Sci 170A: Applied Research Methods
+
+-   Stats 10. Introduction to Statistical Reasoning
+
+-   Stats 20. Introduction to Statistical Programming with R
+
+-   Stats 100A. Introduction to Probability
+
+-   Stats 100B. Introduction to Mathematical Statistics
+
+-   Stats 100C. Linear Models
+
+-   Stats 101A. Introduction to Data Analysis and Regression
+
+-   Stats 101B. Introduction to Design and Analysis of Experiment
+
+-   Stats 101C. Introduction to Statistical Models and Data Mining
+
+-   Stats 102A. Introduction to Computational Statistics with R
+
+-   Stats 102B. Introduction to Computation and Optimization for Statistics
+
+-   Stats 102C. Introduction to Monte Carlo Methods
+
+-   Stats 112. Statistics: Window to Understanding Diversity
+
+-   Stats M169. Causality X
