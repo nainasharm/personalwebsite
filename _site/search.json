@@ -11,21 +11,21 @@
     "href": "index.html",
     "title": "Naina Sharma",
     "section": "",
-    "text": "Naina Sharma is a Statistics and Data Science and Political Science student at the University of California, Los Angeles. Download My Resume"
+    "text": "Naina Sharma is a fourth year Statistics and Data Science and Political Science student at the University of California, Los Angeles. After graduation, she plans to work in consulting in New York City.\nDownload My Resume."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Naina Sharma",
     "section": "Education",
-    "text": "Education\nUniversity of California, Los Angeles | Los Angeles, CA\nStatistics and Data Science B.S. | Sept 2021 - June 2025\nPolitical Science B.A. | Sept 2021 - June 2025"
+    "text": "Education\n\nUniversity of California, Los Angeles\nSept 2021 - June 2025  Statistics and Data Science B.S.  Political Science B.A."
   },
   {
     "objectID": "index.html#experience",
     "href": "index.html#experience",
     "title": "Naina Sharma",
     "section": "Experience",
-    "text": "Experience\nUCLA Political Science Department | Undergraduate Research Assistant | Jan 2024 – Present\nAt UCLA, I assist in machine learning research by web scraping image data and validating models used for computer vision applications. My work contributes to developing algorithms that estimate topic vectors and causal effects for image-based data.\nPricewaterhouseCoopers | Financial Risk Consulting Intern | June 2024 – Aug 2024\nDuring my internship at PwC, I supported financial risk analysis by creating internal liquidity stress test procedures and optimizing regression models for compliance with federal regulations. I also performed data reconciliation across multiple sources to ensure accuracy in risk assessments.\nBank Information Center | Social Inclusion Fellow | June 2022 – March 2024\nI worked on policy analysis and advocacy, researching the World Bank’s gender strategy and publishing reports on the social inclusion compliance of various development projects. My work involved monitoring international funding projects and presenting recommendations to high-level stakeholders.\nUnited Way of Santa Cruz County | Intern | June 2020 – Aug 2020\nI conducted research on social determinants of health and race relations while contributing to public outreach efforts. I also designed and wrote social media content to increase community engagement with the organization’s initiatives."
+    "text": "Experience\n\nUCLA Political Science Department\nUndergraduate Research Assistant  Jan 2024 – Present\nAt UCLA, I assist in machine learning research by web scraping image data and validating models used for computer vision applications. My work contributes to developing algorithms that estimate topic vectors and causal effects for image-based data.\n\n\nPricewaterhouseCoopers\nFinancial Risk Consulting Intern  June 2024 – Aug 2024\nDuring my internship at PwC, I supported financial risk analysis by creating internal liquidity stress test procedures and optimizing regression models for compliance with federal regulations. I also performed data reconciliation across multiple sources to ensure accuracy in risk assessments.\n\n\nBank Information Center\nSocial Inclusion Fellow  June 2022 – March 2024\nI worked on policy analysis and advocacy, researching the World Bank’s gender strategy and publishing reports on the social inclusion compliance of various development projects. My work involved monitoring international funding projects and presenting recommendations to high-level stakeholders.\n\n\nUnited Way of Santa Cruz County\nIntern  June 2020 – Aug 2020\nI conducted research on social determinants of health and race relations while contributing to public outreach efforts. I also designed and wrote social media content to increase community engagement with the organization’s initiatives."
   },
   {
     "objectID": "index.html#projects",
@@ -33,5 +33,12 @@
     "title": "Naina Sharma",
     "section": "Projects",
     "text": "Projects\nHere is my first project. Here is my second project."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Naina Sharma",
+    "section": "",
+    "text": "Naina Sharma is a fourth year Statistics and Data Science and Political Science student at the University of California, Los Angeles. After graduation, she plans to work in consulting in New York City.\nDownload My Resume."
   }
 ]

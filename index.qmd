@@ -10,34 +10,49 @@ about:
     - icon: github
       text: Github
       href: https://github.com/nainasharm
-    - icon: gmail
+    - icon: mail
       text: Email
       url: "mailto:nainasharma@ucla.edu"
 ---
 
-Naina Sharma is a Statistics and Data Science and Political Science student at the University of California, Los Angeles. Download [My Resume](/Resume_Stats140.pdf)
+## About Me
+
+Naina Sharma is a fourth year Statistics and Data Science and Political Science student at the University of California, Los Angeles. After graduation, she plans to work in consulting in New York City.
+
+Download [My Resume](/Resume_Stats140.pdf).
 
 ## Education
 
-University of California, Los Angeles | Los Angeles, CA  
-**Statistics and Data Science B.S. | Sept 2021 - June 2025**  
-**Political Science B.A. | Sept 2021 - June 2025**  
+#### **University of California, Los Angeles**
+
+*Sept 2021 - June 2025* <br> Statistics and Data Science B.S. <br> Political Science B.A.
 
 ## Experience
 
-**UCLA Political Science Department** | Undergraduate Research Assistant | Jan 2024 – Present  
-At UCLA, I assist in machine learning research by web scraping image data and validating models used for computer vision applications. My work contributes to developing algorithms that estimate topic vectors and causal effects for image-based data.  
+#### **UCLA Political Science Department**
 
-**PricewaterhouseCoopers** | Financial Risk Consulting Intern | June 2024 – Aug 2024  
-During my internship at PwC, I supported financial risk analysis by creating internal liquidity stress test procedures and optimizing regression models for compliance with federal regulations. I also performed data reconciliation across multiple sources to ensure accuracy in risk assessments.  
+Undergraduate Research Assistant <br> *Jan 2024 – Present*
 
-**Bank Information Center** | Social Inclusion Fellow | June 2022 – March 2024  
-I worked on policy analysis and advocacy, researching the World Bank’s gender strategy and publishing reports on the social inclusion compliance of various development projects. My work involved monitoring international funding projects and presenting recommendations to high-level stakeholders.  
+At UCLA, I assist in machine learning research by web scraping image data and validating models used for computer vision applications. My work contributes to developing algorithms that estimate topic vectors and causal effects for image-based data.
 
-**United Way of Santa Cruz County** | Intern | June 2020 – Aug 2020  
-I conducted research on social determinants of health and race relations while contributing to public outreach efforts. I also designed and wrote social media content to increase community engagement with the organization’s initiatives. 
+#### **PricewaterhouseCoopers**
+
+Financial Risk Consulting Intern <br> *June 2024 – Aug 2024*
+
+During my internship at PwC, I supported financial risk analysis by creating internal liquidity stress test procedures and optimizing regression models for compliance with federal regulations. I also performed data reconciliation across multiple sources to ensure accuracy in risk assessments.
+
+#### **Bank Information Center**
+
+Social Inclusion Fellow <br> *June 2022 – March 2024*
+
+I worked on policy analysis and advocacy, researching the World Bank’s gender strategy and publishing reports on the social inclusion compliance of various development projects. My work involved monitoring international funding projects and presenting recommendations to high-level stakeholders.
+
+#### **United Way of Santa Cruz County**
+
+Intern <br> *June 2020 – Aug 2020*
+
+I conducted research on social determinants of health and race relations while contributing to public outreach efforts. I also designed and wrote social media content to increase community engagement with the organization’s initiatives.
 
 ## Projects
-Here is my first [project](/projects/project_1.qmd).
-Here is my second [project](/projects/project_2.qmd).
 
+Here is my first [project](/projects/project_1.qmd). Here is my second [project](/projects/project_2.qmd).
