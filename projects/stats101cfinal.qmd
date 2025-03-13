@@ -107,7 +107,6 @@ We tested three models:
 
 [📄 **Download Full Report**](/projects/Stats 101C Final Project Paper.pdf)
 
+Reach out to me directly for full R Code.
+
 ---
-
-Let me know if you need any refinements! 🚀
-

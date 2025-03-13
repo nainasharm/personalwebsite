@@ -1,0 +1,107 @@
+--- 
+title: "Predicting Student Alcohol Consumption"
+author: "Naina Sharma, Ava Adlao, Ray Min, Jinhyo Lee, Michael Gureghian"
+date: "December 9, 2024"
+format: html
+---
+
+# Overview
+
+This study investigates the **factors influencing student alcohol consumption** among Portuguese secondary school students. Using a dataset of **1,044 students**, we explore **demographic, academic, social, and familial influences** on weekday alcohol consumption. Our final model, a **logistic regression with 10 predictors**, achieved an accuracy of **76.34%**.
+
+---
+
+# Research Goals
+
+1. **Identify key predictors** of adolescent alcohol consumption.
+2. **Evaluate statistical models** to predict weekday alcohol consumption.
+3. **Provide insights** to support targeted interventions for high-risk students.
+
+---
+
+# Data Overview
+
+- **Dataset**: Survey data from **1,044 students** in Portugal (2008).
+- **Primary Outcome Variable**:  
+  - **Weekday alcohol consumption (Dalc)** (1 = very low, 5 = very high).
+- **Categories of Predictors**:
+  - **Demographics** (e.g., age, sex, parental education).
+  - **Academic Performance** (e.g., grades, absences).
+  - **Social Relationships** (e.g., time with friends, family relationships).
+  - **Educational Support** (e.g., study time, extra classes).
+
+---
+
+# Exploratory Data Analysis (EDA)
+
+📊 **Key Findings:**
+- **Alcohol consumption is higher on weekends** than weekdays.
+- **Male students consume more alcohol** than female students.
+- **Frequent social outings & absences** correlate positively with alcohol consumption.
+- **Higher grades & study time** correlate negatively with alcohol consumption.
+- **Family relationships** are a **protective factor** against alcohol use.
+
+📈 **Strongest Correlations:**
+- **Weekday & Weekend Alcohol Use** (r = 0.63) → Students who drink on weekends tend to drink on weekdays.
+- **Going Out (goout) & Alcohol Use** (r = 0.32-0.35) → More social activity increases alcohol consumption.
+- **Parental Education & Alcohol Use** (r ≈ -0.10) → Higher maternal education slightly reduces drinking likelihood.
+
+---
+
+# Model Selection
+
+We tested multiple models to predict weekday alcohol consumption:
+
+✅ **1. Ordinal Regression (Initial Model)**
+- Used **Dalc (1-5)** as an **ordinal** outcome.
+- **Failed due to class imbalance** (mostly predicting "1").
+- **Revised into binary classification** (low vs. high alcohol consumption).
+
+✅ **2. Logistic Regression (Final Model)**
+- Converted **Dalc into binary (0 = Low, 1 = High)**.
+- Used **stepwise selection & random forest variable importance** for feature selection.
+- Achieved **76.34% accuracy**.
+
+---
+
+# Final Model: Logistic Regression
+
+📌 **Key Predictors (10 Features Selected):**
+
+1. **Demographics**:  
+   - Male students **more likely** to drink.  
+   - Students with mothers in **health professions drink less**.  
+   - Students with **mothers as primary guardians drink less**.  
+
+2. **Academic & Social Factors**:  
+   - **More absences & going out** → **higher alcohol use**.  
+   - **Higher grades & study time** → **lower alcohol use**.  
+   - **Better family relationships** → **lower alcohol use**.  
+
+🎯 **Final Accuracy: 76.34%**  
+📊 **AUC (Area Under Curve): 0.7686**  
+
+---
+
+# Key Findings & Implications
+
+✅ **Risk Factors for Alcohol Use**:
+- **Male students** are at higher risk.
+- **Social behaviors (going out, absences)** increase likelihood.
+- **Poor family relationships & low study time** correlate with higher drinking.
+
+✅ **Protective Factors**:
+- **Higher parental education & parental involvement** reduce alcohol consumption.
+- **Higher grades & study time** reduce likelihood of drinking.
+
+🔍 **Limitations**:
+- Data is from **2008**; social behaviors may have changed.
+- Class imbalance in alcohol consumption skews predictions.
+- Further research could improve **model interpretability & generalizability**.
+
+---
+
+[📄 **Download Full Report**](/projects/Stats 112 Final Paper.pdf)
+
+---
+
