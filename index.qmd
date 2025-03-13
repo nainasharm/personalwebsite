@@ -52,7 +52,3 @@ I worked on policy analysis and advocacy, researching the World Bank’s gender 
 Intern <br> *June 2020 – Aug 2020*
 
 I conducted research on social determinants of health and race relations while contributing to public outreach efforts. I also designed and wrote social media content to increase community engagement with the organization’s initiatives.
-
-## Projects
-
-Here is my first [project](/projects/project_1.qmd). Here is my second [project](/projects/project_2.qmd).

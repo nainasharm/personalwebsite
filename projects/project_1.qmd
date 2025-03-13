@@ -1,4 +1,63 @@
 ---
-title: "Project 1"
---- 
+title: "Summary of Cobalt Extraction in the DRC"
+author: "Naina Sharma & Harun Vemulapalli"
+date: "March 15, 2024"
+format: html
+---
 
+# Introduction
+
+Cobalt extraction in the Democratic Republic of the Congo (DRC) is a key driver of modern technology, but it also fuels extreme **wealth inequality** and **labor exploitation**. The DRC produces approximately **70% of the world's cobalt**, mainly used in lithium batteries. However, despite its resource wealth, the country suffers from **high poverty rates** and **poor governance**. This study explores how **cobalt production influences wealth distribution**, examining whether poor governance plays a role in exacerbating inequality.
+
+# Theoretical Framework
+
+We apply **Leonard and Straus' theory** of **enclave economies**, which suggests that economies dominated by resource exports tend to benefit elites while leaving the broader population impoverished. In enclave economies, governments and rebel groups can exploit resources **without relying on societal well-being**, leading to sustained corruption, conflict, and economic disparity.
+
+Our research questions:
+
+1.  Does cobalt production and revenue lead to **unequal wealth distribution** in the DRC?
+2.  Does **poor governance** play a role in this inequality?
+
+# Methodology
+
+We use **quantitative analysis** based on **time-series data from 2000-2018**. Key variables include:
+
+-   **Independent Variables**:
+    -   Cobalt production (`co_prod`)
+    -   Cobalt revenue (`co_rev`)
+-   **Outcome Variables**:
+    -   **HDI (Human Development Index)** – Measures societal well-being.
+    -   **GDP per capita** – Measures overall economic performance.
+-   **Governance Indicators**:
+    -   Civil liberties (`fr_cl`)
+    -   Political rights (`fr_pr`)
+    -   Democracy score (`polity`)
+
+We apply **Ordinary Least Squares (OLS) regression** to assess the relationships between these variables.
+
+# Key Findings
+
+1.  **Cobalt production exacerbates wealth inequality**
+    -   GDP per capita **increases more than HDI**, indicating that cobalt wealth is not improving overall living conditions.
+    -   The correlation between **cobalt production and GDP per capita** is **1.5 times stronger** than with HDI.
+2.  **Governance indicators are not statistically significant**
+    -   Leonard and Straus’ theory suggests **government corruption drives inequality**, but our analysis finds **no strong evidence** for this in the DRC.
+    -   This could be due to **foreign control over cobalt production**, particularly by **Chinese firms**, which bypass government structures.
+3.  **Cobalt production (not revenue) is the stronger predictor of inequality**
+    -   The physical amount of cobalt produced has a **greater impact** on inequality than cobalt revenue.
+    -   This suggests that factors like **labor exploitation, health hazards, and forced evictions** may be more significant than government corruption in driving inequality.
+
+# Alternative Explanations
+
+-   **Foreign Influence**: Chinese companies dominate cobalt mining, often **underpaying workers and bypassing government taxation**, which may explain why governance indicators are not predictive.
+-   **Human Rights Violations**: The **toxic nature of cobalt mining** affects health, education, and wages, which directly reduces **HDI scores**.
+-   **Limitations of Governance Indicators**: Standard governance measures may **not capture corruption effectively**, leading to **underestimation** of its role.
+
+# Conclusion
+
+Cobalt production in the DRC **worsens wealth inequality**, with economic benefits concentrating among elites rather than improving public welfare. However, contrary to Leonard and Straus’ predictions, **government corruption does not appear to be the primary driver**. Instead, **foreign corporate control, labor exploitation, and health impacts** may be more significant. Future research should refine governance indicators and explore **non-economic factors** affecting inequality in the DRC.
+
+Download the full report [Download the full report](PS 151B Paper.pdf)
+
+
+------------------------------------------------------------------------
