@@ -1,0 +1,113 @@
+---
+title: "Predictive Analysis of Obesity Diagnostic"
+author: "Leo Cardozo, Allison Chen, Clajerson Gimena, Faith Satrya, Naina Sharma"
+date: "2024"
+format: html
+---
+
+# Overview
+
+This project aims to **predict obesity status** using a classification model trained on clinical and lifestyle variables. We explored different machine learning models, performed feature selection, and fine-tuned hyperparameters to achieve high predictive accuracy. Our **final model, an XGBoost classifier, achieved 99.59% accuracy** and ranked **3rd on the Kaggle leaderboard**.
+
+---
+
+# Research Goals
+
+1. **Develop a classification model** to predict whether an individual is obese.
+2. **Analyze key predictors** of obesity, including demographics, lifestyle, and health metrics.
+3. **Optimize model performance** through feature selection and hyperparameter tuning.
+
+---
+
+# Data Overview
+
+- **Dataset**: 42,686 observations, with 29 variables.
+- **Train-Test Split**: 
+  - **Training set**: 32,014 observations  
+  - **Testing set**: 10,672 observations  
+- **Class Distribution**: 
+  - **Not Obese**: 61%
+  - **Obese**: 39% (moderate class imbalance)
+- **Missing Data**:  
+  - ~8% missing values across both train and test sets.
+
+---
+
+# Exploratory Data Analysis (EDA)
+
+- **Numerical Variables**:
+  - Correlation matrix revealed weak correlations (|r| < 0.5).
+  - Key predictors: **Age, CH20 (daily water intake), Height, NCP (number of meals), and FAF (physical activity frequency).**
+- **Categorical Variables**:
+  - Used **Cramér’s V** to measure association strength.
+  - Variables like **Resting ECG & Exercise Angina** showed moderate correlation.
+- **Imputation**:
+  - Used **MICE (Multivariate Imputation by Chained Equations)** in R.
+  - Fine-tuned imputation methods through **cross-validation**.
+  - Also tested **missForest (Random Forest Imputation)** for better performance.
+
+---
+
+# Model Selection
+
+We tested three models:
+
+✅ **1. Logistic Regression**  
+- Initial accuracy: **74.7%**  
+- Feature selection reduced accuracy to **72.1%**  
+- Not chosen due to **linear decision boundaries**.
+
+✅ **2. Random Forest**  
+- Baseline accuracy: **98.4%**  
+- Fine-tuned (400 trees, 14 features): **99.3%**  
+- Performed well but not the best.
+
+✅ **3. XGBoost (Final Model)**  
+- Initial accuracy: **98.9%** (default hyperparameters).  
+- Fine-tuned and feature-selected (19 features): **99.59%**.  
+- **Ranked 3rd on Kaggle leaderboard**.  
+- **Selected as the final model** due to best performance.
+
+---
+
+# Final Model: XGBoost
+
+**Top 5 Features:**
+1. **Age**
+2. **Daily water intake (CH20)**
+3. **Height**
+4. **Number of main meals (NCP)**
+5. **Physical activity frequency (FAF)**
+
+**Key Hyperparameters:** <br>
+- `max_depth: 8` (allows deeper trees) <br>
+- `eta: 0.3` (controls learning rate) <br>
+- `subsample: 1` (uses all data per tree) <br>
+- `colsample_bytree: 0.6` (prevents overfitting) <br>
+- `min_child_weight: 1` (regularization)
+
+📊 **Final Accuracy: 99.59%**
+
+---
+
+# Conclusions & Recommendations
+
+### ✅ **Key Findings**
+- **Obesity can be predicted with high accuracy** using clinical and lifestyle factors.
+- **XGBoost outperformed Logistic Regression and Random Forest**.
+- **Imputation quality significantly impacts model performance**.
+
+### 🔍 **Limitations & Future Work**
+- **Interpretability**: XGBoost lacks clear decision rules like logistic regression.
+- **Better imputation**: Testing **missForest** led to **99.86% accuracy** (but was not submitted in time).
+- **Explore deep learning models**: Neural networks may further improve performance.
+- **Use SHAP values**: To explain **feature contributions** in XGBoost.
+
+---
+
+[📄 **Download Full Report**](/projects/Stats 101C Final Project Paper.pdf)
+
+---
+
+Let me know if you need any refinements! 🚀
+

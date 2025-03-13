@@ -52,3 +52,13 @@ I worked on policy analysis and advocacy, researching the World Bank’s gender 
 Intern <br> *June 2020 – Aug 2020*
 
 I conducted research on social determinants of health and race relations while contributing to public outreach efforts. I also designed and wrote social media content to increase community engagement with the organization’s initiatives.
+
+## Projects
+
+See all my projects here:
+
+-   [Cobalt Extraction in the Democratic Republic of the Congo](/projects/project_1.qmd)
+
+-   [The Effect of Caffeine and Music Genre on Heart Rate](/projects/project_2.qmd)
+
+-   [Predictive Analysis of Obesity Diagnostic](/projects/stats101cfinal.qmd)

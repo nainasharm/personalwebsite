@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Fong Lieu, Shevanti Kumar, Isha Godbole, Naina Sharma">
-<meta name="dcterms.date" content="2024-06-14">
+<meta name="author" content="Leo Cardozo, Allison Chen, Clajerson Gimena, Faith Satrya, Naina Sharma">
+<meta name="dcterms.date" content="2023-12-31">
 
-<title>The Effect of Caffeine and Music Genre on Heart Rate – Naina Sharma</title>
+<title>Predictive Analysis of Obesity Diagnostic – Naina Sharma</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,13 +115,15 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">Research Questions</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis">Statistical Analysis</a></li>
-  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
-  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a>
+  <li><a href="#research-goals" id="toc-research-goals" class="nav-link" data-scroll-target="#research-goals">Research Goals</a></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a></li>
+  <li><a href="#exploratory-data-analysis-eda" id="toc-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
+  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model Selection</a></li>
+  <li><a href="#final-model-xgboost" id="toc-final-model-xgboost" class="nav-link" data-scroll-target="#final-model-xgboost">Final Model: XGBoost</a></li>
+  <li><a href="#conclusions-recommendations" id="toc-conclusions-recommendations" class="nav-link" data-scroll-target="#conclusions-recommendations">Conclusions &amp; Recommendations</a>
   <ul class="collapse">
-  <li><a href="#future-research" id="toc-future-research" class="nav-link" data-scroll-target="#future-research">Future Research</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">✅ <strong>Key Findings</strong></a></li>
+  <li><a href="#limitations-future-work" id="toc-limitations-future-work" class="nav-link" data-scroll-target="#limitations-future-work">🔍 <strong>Limitations &amp; Future Work</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -131,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Effect of Caffeine and Music Genre on Heart Rate</h1>
+<h1 class="title">Predictive Analysis of Obesity Diagnostic</h1>
 </div>
 
 
@@ -141,14 +143,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Fong Lieu, Shevanti Kumar, Isha Godbole, Naina Sharma </p>
+             <p>Leo Cardozo, Allison Chen, Clajerson Gimena, Faith Satrya, Naina Sharma </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 14, 2024</p>
+      <p class="date">December 31, 2023</p>
     </div>
   </div>
   
@@ -162,78 +164,110 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1">
 <h1>Overview</h1>
-<p>This study investigates the effects of <strong>caffeine consumption</strong> and <strong>music genre</strong> on <strong>heart rate</strong> among adults aged 18-30. While previous research suggests that <strong>classical music</strong> may reduce heart rate and <strong>heavy metal music</strong> may increase it, the role of <strong>caffeine as a modifying factor</strong> remains unclear.</p>
-<p>Through a <strong>randomized factorial experiment</strong>, we analyze whether caffeine and music genres independently or interactively influence heart rate.</p>
+<p>This project aims to <strong>predict obesity status</strong> using a classification model trained on clinical and lifestyle variables. We explored different machine learning models, performed feature selection, and fine-tuned hyperparameters to achieve high predictive accuracy. Our <strong>final model, an XGBoost classifier, achieved 99.59% accuracy</strong> and ranked <strong>3rd on the Kaggle leaderboard</strong>.</p>
 <hr>
 </section>
-<section id="research-questions" class="level1">
-<h1>Research Questions</h1>
+<section id="research-goals" class="level1">
+<h1>Research Goals</h1>
 <ol type="1">
-<li>Does <strong>caffeine consumption</strong> significantly impact heart rate?</li>
-<li>Do different <strong>music genres</strong> (classical, heavy metal, no music) influence heart rate?</li>
-<li>Is there a significant <strong>interaction</strong> between caffeine and music genre on heart rate?</li>
+<li><strong>Develop a classification model</strong> to predict whether an individual is obese.</li>
+<li><strong>Analyze key predictors</strong> of obesity, including demographics, lifestyle, and health metrics.</li>
+<li><strong>Optimize model performance</strong> through feature selection and hyperparameter tuning.</li>
 </ol>
 <hr>
 </section>
-<section id="methods" class="level1">
-<h1>Methods</h1>
+<section id="data-overview" class="level1">
+<h1>Data Overview</h1>
 <ul>
-<li><strong>Participants</strong>: 168 young adults (18-30 years old) from Providence Island in the Islands simulation.</li>
-<li><strong>Experimental Design</strong>:
+<li><strong>Dataset</strong>: 42,686 observations, with 29 variables.</li>
+<li><strong>Train-Test Split</strong>:
 <ul>
-<li><strong>Factor 1: Music Genre</strong> (No music, Classical, Heavy Metal)<br>
+<li><strong>Training set</strong>: 32,014 observations<br>
 </li>
-<li><strong>Factor 2: Caffeine Consumption</strong> (250mL Decaf vs.&nbsp;250mL Caffeinated Coffee)<br>
-</li>
-<li><strong>Dependent Variable</strong>: Change in <strong>heart rate (HR_after - HR_before)</strong><br>
+<li><strong>Testing set</strong>: 10,672 observations<br>
 </li>
 </ul></li>
-<li><strong>Randomization</strong>:
+<li><strong>Class Distribution</strong>:
 <ul>
-<li>Participants were randomly assigned to one of <strong>six treatment groups</strong> (e.g., Caffeinated + Classical, Decaf + Heavy Metal, etc.).</li>
-<li><strong>Heart rate was measured before and after treatment</strong> using a heart rate monitor.</li>
+<li><strong>Not Obese</strong>: 61%</li>
+<li><strong>Obese</strong>: 39% (moderate class imbalance)</li>
+</ul></li>
+<li><strong>Missing Data</strong>:
+<ul>
+<li>~8% missing values across both train and test sets.</li>
 </ul></li>
 </ul>
 <hr>
 </section>
-<section id="statistical-analysis" class="level1">
-<h1>Statistical Analysis</h1>
+<section id="exploratory-data-analysis-eda" class="level1">
+<h1>Exploratory Data Analysis (EDA)</h1>
 <ul>
-<li><strong>Two-Way ANOVA</strong>: To test for main effects and interactions.</li>
-<li><strong>Tukey’s HSD Test</strong>: To analyze <strong>which music genres</strong> significantly differ.</li>
-<li><strong>Model Validation</strong>: R-squared and residual analysis to ensure model fit.</li>
-</ul>
-<hr>
-</section>
-<section id="key-findings" class="level1">
-<h1>Key Findings</h1>
-<p>✅ <strong>Main Effects</strong>: - <strong>Caffeine significantly increases heart rate</strong> (p &lt; 0.001). - <strong>Music genre significantly affects heart rate</strong> (p &lt; 0.001): - <strong>Heavy metal increases heart rate</strong>. - <strong>Classical music lowers heart rate</strong> compared to no music.</p>
-<p>❌ <strong>No Significant Interaction</strong>: - The interaction between caffeine and music was <strong>not statistically significant</strong> (p = 0.38), meaning <strong>caffeine does not amplify or reduce the effects of music</strong> on heart rate.</p>
-<p>📊 <strong>Model Fit</strong>: - <strong>R-squared: 96.3%</strong>, indicating a strong fit between the model and data.</p>
-<hr>
-</section>
-<section id="conclusions" class="level1">
-<h1>Conclusions</h1>
+<li><strong>Numerical Variables</strong>:
 <ul>
-<li><strong>Caffeine increases heart rate</strong>, confirming prior research.</li>
-<li><strong>Music genre plays a major role</strong> in heart rate regulation:
-<ul>
-<li><strong>Heavy metal increases heart rate</strong>, potentially due to <strong>arousal effects</strong>.</li>
-<li><strong>Classical music lowers heart rate</strong>, supporting the idea that it promotes relaxation.</li>
+<li>Correlation matrix revealed weak correlations (|r| &lt; 0.5).</li>
+<li>Key predictors: <strong>Age, CH20 (daily water intake), Height, NCP (number of meals), and FAF (physical activity frequency).</strong></li>
 </ul></li>
-<li><strong>Caffeine and music do not interact significantly</strong>, meaning they act <strong>independently</strong> on heart rate.</li>
-</ul>
-<section id="future-research" class="level3">
-<h3 class="anchored" data-anchor-id="future-research">Future Research</h3>
+<li><strong>Categorical Variables</strong>:
 <ul>
-<li>Explore <strong>longer exposure times</strong> to music.</li>
-<li>Test <strong>other caffeine sources</strong> (energy drinks, tea).</li>
-<li>Investigate <strong>other music genres</strong> (pop, electronic, jazz).</li>
-<li>Examine <strong>sex-based or genetic differences</strong> in caffeine metabolism.</li>
+<li>Used <strong>Cramér’s V</strong> to measure association strength.</li>
+<li>Variables like <strong>Resting ECG &amp; Exercise Angina</strong> showed moderate correlation.</li>
+</ul></li>
+<li><strong>Imputation</strong>:
+<ul>
+<li>Used <strong>MICE (Multivariate Imputation by Chained Equations)</strong> in R.</li>
+<li>Fine-tuned imputation methods through <strong>cross-validation</strong>.</li>
+<li>Also tested <strong>missForest (Random Forest Imputation)</strong> for better performance.</li>
+</ul></li>
 </ul>
-<p><a href="../projects/Stats-101B-Final-Paper.pdf">📄 <strong>Download Full Report</strong></a></p>
-<p>Reach out to me directly for full R Code.</p>
 <hr>
+</section>
+<section id="model-selection" class="level1">
+<h1>Model Selection</h1>
+<p>We tested three models:</p>
+<p>✅ <strong>1. Logistic Regression</strong><br>
+- Initial accuracy: <strong>74.7%</strong><br>
+- Feature selection reduced accuracy to <strong>72.1%</strong><br>
+- Not chosen due to <strong>linear decision boundaries</strong>.</p>
+<p>✅ <strong>2. Random Forest</strong><br>
+- Baseline accuracy: <strong>98.4%</strong><br>
+- Fine-tuned (400 trees, 14 features): <strong>99.3%</strong><br>
+- Performed well but not the best.</p>
+<p>✅ <strong>3. XGBoost (Final Model)</strong><br>
+- Initial accuracy: <strong>98.9%</strong> (default hyperparameters).<br>
+- Fine-tuned and feature-selected (19 features): <strong>99.59%</strong>.<br>
+- <strong>Ranked 3rd on Kaggle leaderboard</strong>.<br>
+- <strong>Selected as the final model</strong> due to best performance.</p>
+<hr>
+</section>
+<section id="final-model-xgboost" class="level1">
+<h1>Final Model: XGBoost</h1>
+<p><strong>Top 5 Features:</strong> 1. <strong>Age</strong> 2. <strong>Daily water intake (CH20)</strong> 3. <strong>Height</strong> 4. <strong>Number of main meals (NCP)</strong> 5. <strong>Physical activity frequency (FAF)</strong></p>
+<p><strong>Key Hyperparameters:</strong> <br> - <code>max_depth: 8</code> (allows deeper trees) <br> - <code>eta: 0.3</code> (controls learning rate) <br> - <code>subsample: 1</code> (uses all data per tree) <br> - <code>colsample_bytree: 0.6</code> (prevents overfitting) <br> - <code>min_child_weight: 1</code> (regularization)</p>
+<p>📊 <strong>Final Accuracy: 99.59%</strong></p>
+<hr>
+</section>
+<section id="conclusions-recommendations" class="level1">
+<h1>Conclusions &amp; Recommendations</h1>
+<section id="key-findings" class="level3">
+<h3 class="anchored" data-anchor-id="key-findings">✅ <strong>Key Findings</strong></h3>
+<ul>
+<li><strong>Obesity can be predicted with high accuracy</strong> using clinical and lifestyle factors.</li>
+<li><strong>XGBoost outperformed Logistic Regression and Random Forest</strong>.</li>
+<li><strong>Imputation quality significantly impacts model performance</strong>.</li>
+</ul>
+</section>
+<section id="limitations-future-work" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-future-work">🔍 <strong>Limitations &amp; Future Work</strong></h3>
+<ul>
+<li><strong>Interpretability</strong>: XGBoost lacks clear decision rules like logistic regression.</li>
+<li><strong>Better imputation</strong>: Testing <strong>missForest</strong> led to <strong>99.86% accuracy</strong> (but was not submitted in time).</li>
+<li><strong>Explore deep learning models</strong>: Neural networks may further improve performance.</li>
+<li><strong>Use SHAP values</strong>: To explain <strong>feature contributions</strong> in XGBoost.</li>
+</ul>
+<hr>
+<p><a href="../projects/Stats 101C Final Project Paper.pdf">📄 <strong>Download Full Report</strong></a></p>
+<hr>
+<p>Let me know if you need any refinements! 🚀</p>
 
 
 </section>

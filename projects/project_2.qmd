@@ -1,3 +1,76 @@
 ---
-title: "Project 2"
---- 
+title: "The Effect of Caffeine and Music Genre on Heart Rate"
+author: "Fong Lieu, Shevanti Kumar, Isha Godbole, Naina Sharma"
+date: "June 14, 2024"
+format: html
+---
+
+# Overview
+
+This study investigates the effects of **caffeine consumption** and **music genre** on **heart rate** among adults aged 18-30. While previous research suggests that **classical music** may reduce heart rate and **heavy metal music** may increase it, the role of **caffeine as a modifying factor** remains unclear.
+
+Through a **randomized factorial experiment**, we analyze whether caffeine and music genres independently or interactively influence heart rate.
+
+------------------------------------------------------------------------
+
+# Research Questions
+
+1.  Does **caffeine consumption** significantly impact heart rate?
+2.  Do different **music genres** (classical, heavy metal, no music) influence heart rate?
+3.  Is there a significant **interaction** between caffeine and music genre on heart rate?
+
+------------------------------------------------------------------------
+
+# Methods
+
+-   **Participants**: 168 young adults (18-30 years old) from Providence Island in the Islands simulation.
+-   **Experimental Design**:
+    -   **Factor 1: Music Genre** (No music, Classical, Heavy Metal)\
+    -   **Factor 2: Caffeine Consumption** (250mL Decaf vs. 250mL Caffeinated Coffee)\
+    -   **Dependent Variable**: Change in **heart rate (HR_after - HR_before)**\
+-   **Randomization**:
+    -   Participants were randomly assigned to one of **six treatment groups** (e.g., Caffeinated + Classical, Decaf + Heavy Metal, etc.).
+    -   **Heart rate was measured before and after treatment** using a heart rate monitor.
+
+------------------------------------------------------------------------
+
+# Statistical Analysis
+
+-   **Two-Way ANOVA**: To test for main effects and interactions.
+-   **Tukey’s HSD Test**: To analyze **which music genres** significantly differ.
+-   **Model Validation**: R-squared and residual analysis to ensure model fit.
+
+------------------------------------------------------------------------
+
+# Key Findings
+
+✅ **Main Effects**: - **Caffeine significantly increases heart rate** (p \< 0.001). - **Music genre significantly affects heart rate** (p \< 0.001): - **Heavy metal increases heart rate**. - **Classical music lowers heart rate** compared to no music.
+
+❌ **No Significant Interaction**: - The interaction between caffeine and music was **not statistically significant** (p = 0.38), meaning **caffeine does not amplify or reduce the effects of music** on heart rate.
+
+📊 **Model Fit**: - **R-squared: 96.3%**, indicating a strong fit between the model and data.
+
+------------------------------------------------------------------------
+
+# Conclusions
+
+-   **Caffeine increases heart rate**, confirming prior research.
+-   **Music genre plays a major role** in heart rate regulation:
+    -   **Heavy metal increases heart rate**, potentially due to **arousal effects**.
+    -   **Classical music lowers heart rate**, supporting the idea that it promotes relaxation.
+-   **Caffeine and music do not interact significantly**, meaning they act **independently** on heart rate.
+
+### Future Research
+
+-   Explore **longer exposure times** to music.
+-   Test **other caffeine sources** (energy drinks, tea).
+-   Investigate **other music genres** (pop, electronic, jazz).
+-   Examine **sex-based or genetic differences** in caffeine metabolism.
+
+
+[📄 **Download Full Report**](/projects/Stats-101B-Final-Paper.pdf)
+
+Reach out to me directly for full R Code.
+
+------------------------------------------------------------------------
+

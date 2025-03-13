@@ -1,5 +1,5 @@
 ---
-title: "Summary of Cobalt Extraction in the DRC"
+title: "Cobalt Extraction in the Democratic Republic of the Congo"
 author: "Naina Sharma & Harun Vemulapalli"
 date: "March 15, 2024"
 format: html
@@ -57,7 +57,8 @@ We apply **Ordinary Least Squares (OLS) regression** to assess the relationships
 
 Cobalt production in the DRC **worsens wealth inequality**, with economic benefits concentrating among elites rather than improving public welfare. However, contrary to Leonard and Straus’ predictions, **government corruption does not appear to be the primary driver**. Instead, **foreign corporate control, labor exploitation, and health impacts** may be more significant. Future research should refine governance indicators and explore **non-economic factors** affecting inequality in the DRC.
 
-Download the full report [Download the full report](PS 151B Paper.pdf)
+[📄 Download the full report](/projects/PS 151B Paper - Final.pdf)
 
+Reach out to me directly for full R Code.
 
 ------------------------------------------------------------------------
