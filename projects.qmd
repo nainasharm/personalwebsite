@@ -12,11 +12,17 @@ See all my projects here:
 
 #### Relevant coursework
 
--   Pol Sci 170A: Applied Research Methods
-
 -   Stats 10. Introduction to Statistical Reasoning
 
 -   Stats 20. Introduction to Statistical Programming with R
+
+-   PIC 10A. Introduction to Programming
+
+-   Math 32A/B. Calculus of Several Variables
+
+-   Math 33A. Linear Algebra
+
+-   Pol Sci 170A: Applied Research Methods
 
 -   Stats 100A. Introduction to Probability
 
