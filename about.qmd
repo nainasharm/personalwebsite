@@ -1,9 +1,12 @@
 ---
-title: "About"
+title: "About Me"
+about:
+  template: trestles
+  image: headshot2.jpg
 ---
 
-About this site
+Hello! I'm Naina Sharma, a fourth-year student at the University of California, Los Angeles, where I study Statistics & Data Science and Political Science. My academic and professional interests lie at the intersection of quantitative analysis and political science, exploring how data-driven tools can enhance our understanding of society and governance.
 
-```{r}
-1 + 1
-```
+I have experience in nonprofit development finance and financial risk consulting, particularly within cybersecurity, risk, and regulatory consulting. Additionally, my research in statistical image analysis examines media bias and viewer perception in political science, leveraging data to uncover insights about how information is framed and received.
+
+Beyond academics, my background is quite global—I grew up in Singapore, spent my high school years in a boarding school in Connecticut, and now live in Los Angeles. I love to travel, try new foods, and explore different cultures. Fitness is another big passion of mine, and I enjoy biking, hiking, and swimming as ways to stay active and experience the world.
