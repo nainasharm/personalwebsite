@@ -33,7 +33,7 @@ Download [My Resume](/Resume_Stats140.pdf).
 
 Undergraduate Research Assistant <br> *Jan 2024 – Present*
 
-At UCLA, I assist in machine learning research by web scraping image data and validating models used for computer vision applications. My work contributes to developing algorithms that estimate topic vectors and causal effects for image-based data.
+At UCLA, I assist [Dr. Michelle Torres](https://smtorres.org/) with her machine learning research in political science by web scraping image data and validating models used for computer vision applications. My work contributes to developing algorithms that estimate topic vectors and causal effects for image-based data.
 
 #### **PricewaterhouseCoopers**
 
