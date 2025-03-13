@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leo Cardozo, Allison Chen, Clajerson Gimena, Faith Satrya, Naina Sharma">
+<meta name="dcterms.date" content="2023-12-31">
 
-<title>projects – Naina Sharma</title>
+<title>Predictive Analysis of Obesity Diagnostic – Naina Sharma</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Naina Sharma</span>
     </a>
   </div>
@@ -89,15 +91,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -111,45 +113,168 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#research-goals" id="toc-research-goals" class="nav-link" data-scroll-target="#research-goals">Research Goals</a></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a></li>
+  <li><a href="#exploratory-data-analysis-eda" id="toc-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
+  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model Selection</a></li>
+  <li><a href="#final-model-xgboost" id="toc-final-model-xgboost" class="nav-link" data-scroll-target="#final-model-xgboost">Final Model: XGBoost</a></li>
+  <li><a href="#conclusions-recommendations" id="toc-conclusions-recommendations" class="nav-link" data-scroll-target="#conclusions-recommendations">Conclusions &amp; Recommendations</a>
+  <ul class="collapse">
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">✅ <strong>Key Findings</strong></a></li>
+  <li><a href="#limitations-future-work" id="toc-limitations-future-work" class="nav-link" data-scroll-target="#limitations-future-work">🔍 <strong>Limitations &amp; Future Work</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Predictive Analysis of Obesity Diagnostic</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="my-projects" class="level4">
-<h4 class="anchored" data-anchor-id="my-projects">My projects</h4>
-<p>See all my projects here:</p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Leo Cardozo, Allison Chen, Clajerson Gimena, Faith Satrya, Naina Sharma </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 31, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>This project aims to <strong>predict obesity status</strong> using a classification model trained on clinical and lifestyle variables. We explored different machine learning models, performed feature selection, and fine-tuned hyperparameters to achieve high predictive accuracy. Our <strong>final model, an XGBoost classifier, achieved 99.59% accuracy</strong> and ranked <strong>3rd on the Kaggle leaderboard</strong>.</p>
+<hr>
+</section>
+<section id="research-goals" class="level1">
+<h1>Research Goals</h1>
+<ol type="1">
+<li><strong>Develop a classification model</strong> to predict whether an individual is obese.</li>
+<li><strong>Analyze key predictors</strong> of obesity, including demographics, lifestyle, and health metrics.</li>
+<li><strong>Optimize model performance</strong> through feature selection and hyperparameter tuning.</li>
+</ol>
+<hr>
+</section>
+<section id="data-overview" class="level1">
+<h1>Data Overview</h1>
 <ul>
-<li><p><a href="./projects/cobaltdrc.html">Cobalt Extraction in the Democratic Republic of the Congo</a></p></li>
-<li><p><a href="./projects/caffeinemusic.html">The Effect of Caffeine and Music Genre on Heart Rate</a></p></li>
-<li><p><a href="./projects/obesity.html">Predictive Analysis of Obesity Diagnostic</a></p></li>
-<li><p><a href="./projects/alcoholconsumption.html">Predicting Student Alcohol Consumption</a></p></li>
+<li><strong>Dataset</strong>: 42,686 observations, with 29 variables.</li>
+<li><strong>Train-Test Split</strong>:
+<ul>
+<li><strong>Training set</strong>: 32,014 observations<br>
+</li>
+<li><strong>Testing set</strong>: 10,672 observations<br>
+</li>
+</ul></li>
+<li><strong>Class Distribution</strong>:
+<ul>
+<li><strong>Not Obese</strong>: 61%</li>
+<li><strong>Obese</strong>: 39% (moderate class imbalance)</li>
+</ul></li>
+<li><strong>Missing Data</strong>:
+<ul>
+<li>~8% missing values across both train and test sets.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="exploratory-data-analysis-eda" class="level1">
+<h1>Exploratory Data Analysis (EDA)</h1>
+<ul>
+<li><strong>Numerical Variables</strong>:
+<ul>
+<li>Correlation matrix revealed weak correlations (|r| &lt; 0.5).</li>
+<li>Key predictors: <strong>Age, CH20 (daily water intake), Height, NCP (number of meals), and FAF (physical activity frequency).</strong></li>
+</ul></li>
+<li><strong>Categorical Variables</strong>:
+<ul>
+<li>Used <strong>Cramér’s V</strong> to measure association strength.</li>
+<li>Variables like <strong>Resting ECG &amp; Exercise Angina</strong> showed moderate correlation.</li>
+</ul></li>
+<li><strong>Imputation</strong>:
+<ul>
+<li>Used <strong>MICE (Multivariate Imputation by Chained Equations)</strong> in R.</li>
+<li>Fine-tuned imputation methods through <strong>cross-validation</strong>.</li>
+<li>Also tested <strong>missForest (Random Forest Imputation)</strong> for better performance.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="model-selection" class="level1">
+<h1>Model Selection</h1>
+<p>We tested three models:</p>
+<p>✅ <strong>1. Logistic Regression</strong><br>
+- Initial accuracy: <strong>74.7%</strong><br>
+- Feature selection reduced accuracy to <strong>72.1%</strong><br>
+- Not chosen due to <strong>linear decision boundaries</strong>.</p>
+<p>✅ <strong>2. Random Forest</strong><br>
+- Baseline accuracy: <strong>98.4%</strong><br>
+- Fine-tuned (400 trees, 14 features): <strong>99.3%</strong><br>
+- Performed well but not the best.</p>
+<p>✅ <strong>3. XGBoost (Final Model)</strong><br>
+- Initial accuracy: <strong>98.9%</strong> (default hyperparameters).<br>
+- Fine-tuned and feature-selected (19 features): <strong>99.59%</strong>.<br>
+- <strong>Ranked 3rd on Kaggle leaderboard</strong>.<br>
+- <strong>Selected as the final model</strong> due to best performance.</p>
+<hr>
+</section>
+<section id="final-model-xgboost" class="level1">
+<h1>Final Model: XGBoost</h1>
+<p><strong>Top 5 Features:</strong> 1. <strong>Age</strong> 2. <strong>Daily water intake (CH20)</strong> 3. <strong>Height</strong> 4. <strong>Number of main meals (NCP)</strong> 5. <strong>Physical activity frequency (FAF)</strong></p>
+<p><strong>Key Hyperparameters:</strong> <br> - <code>max_depth: 8</code> (allows deeper trees) <br> - <code>eta: 0.3</code> (controls learning rate) <br> - <code>subsample: 1</code> (uses all data per tree) <br> - <code>colsample_bytree: 0.6</code> (prevents overfitting) <br> - <code>min_child_weight: 1</code> (regularization)</p>
+<p>📊 <strong>Final Accuracy: 99.59%</strong></p>
+<hr>
+</section>
+<section id="conclusions-recommendations" class="level1">
+<h1>Conclusions &amp; Recommendations</h1>
+<section id="key-findings" class="level3">
+<h3 class="anchored" data-anchor-id="key-findings">✅ <strong>Key Findings</strong></h3>
+<ul>
+<li><strong>Obesity can be predicted with high accuracy</strong> using clinical and lifestyle factors.</li>
+<li><strong>XGBoost outperformed Logistic Regression and Random Forest</strong>.</li>
+<li><strong>Imputation quality significantly impacts model performance</strong>.</li>
 </ul>
 </section>
-<section id="relevant-coursework" class="level4">
-<h4 class="anchored" data-anchor-id="relevant-coursework">Relevant coursework</h4>
+<section id="limitations-future-work" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-future-work">🔍 <strong>Limitations &amp; Future Work</strong></h3>
 <ul>
-<li><p>Pol Sci 170A: Applied Research Methods</p></li>
-<li><p>Stats 10. Introduction to Statistical Reasoning</p></li>
-<li><p>Stats 20. Introduction to Statistical Programming with R</p></li>
-<li><p>Stats 100A. Introduction to Probability</p></li>
-<li><p>Stats 100B. Introduction to Mathematical Statistics</p></li>
-<li><p>Stats 100C. Linear Models</p></li>
-<li><p>Stats 101A. Introduction to Data Analysis and Regression</p></li>
-<li><p>Stats 101B. Introduction to Design and Analysis of Experiment</p></li>
-<li><p>Stats 101C. Introduction to Statistical Models and Data Mining</p></li>
-<li><p>Stats 102A. Introduction to Computational Statistics with R</p></li>
-<li><p>Stats 102B. Introduction to Computation and Optimization for Statistics</p></li>
-<li><p>Stats 102C. Introduction to Monte Carlo Methods</p></li>
-<li><p>Stats 112. Statistics: Window to Understanding Diversity</p></li>
-<li><p>Stats M169. Causality X</p></li>
+<li><strong>Interpretability</strong>: XGBoost lacks clear decision rules like logistic regression.</li>
+<li><strong>Better imputation</strong>: Testing <strong>missForest</strong> led to <strong>99.86% accuracy</strong> (but was not submitted in time).</li>
+<li><strong>Explore deep learning models</strong>: Neural networks may further improve performance.</li>
+<li><strong>Use SHAP values</strong>: To explain <strong>feature contributions</strong> in XGBoost.</li>
 </ul>
+<hr>
+<p><a href="../projects/Stats 101C Final Project Paper.pdf">📄 <strong>Download Full Report</strong></a></p>
+<p>Reach out to me directly for full R Code.</p>
+<hr>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

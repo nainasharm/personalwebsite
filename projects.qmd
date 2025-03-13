@@ -2,13 +2,13 @@
 
 See all my projects here:
 
--   [Cobalt Extraction in the Democratic Republic of the Congo](/projects/project_1.qmd)
+-   [Cobalt Extraction in the Democratic Republic of the Congo](/projects/cobaltdrc.qmd)
 
--   [The Effect of Caffeine and Music Genre on Heart Rate](/projects/project_2.qmd)
+-   [The Effect of Caffeine and Music Genre on Heart Rate](/projects/caffeinemusic.qmd)
 
--   [Predictive Analysis of Obesity Diagnostic](/projects/stats101cfinal.qmd)
+-   [Predictive Analysis of Obesity Diagnostic](/projects/obesity.qmd)
 
--   [Predicting Student Alcohol Consumption](/projects/stats112.qmd)
+-   [Predicting Student Alcohol Consumption](/projects/alcoholconsumption.qmd)
 
 #### Relevant coursework
 

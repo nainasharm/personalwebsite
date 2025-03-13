@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Naina Sharma, Ava Adlao, Ray Min, Jinhyo Lee, Michael Gureghian">
+<meta name="dcterms.date" content="2024-12-09">
 
-<title>projects – Naina Sharma</title>
+<title>Predicting Student Alcohol Consumption – Naina Sharma</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Naina Sharma</span>
     </a>
   </div>
@@ -89,15 +91,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -111,43 +113,134 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#research-goals" id="toc-research-goals" class="nav-link" data-scroll-target="#research-goals">Research Goals</a></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a></li>
+  <li><a href="#exploratory-data-analysis-eda" id="toc-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
+  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model Selection</a></li>
+  <li><a href="#final-model-logistic-regression" id="toc-final-model-logistic-regression" class="nav-link" data-scroll-target="#final-model-logistic-regression">Final Model: Logistic Regression</a></li>
+  <li><a href="#key-findings-implications" id="toc-key-findings-implications" class="nav-link" data-scroll-target="#key-findings-implications">Key Findings &amp; Implications</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Predicting Student Alcohol Consumption</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="my-projects" class="level4">
-<h4 class="anchored" data-anchor-id="my-projects">My projects</h4>
-<p>See all my projects here:</p>
-<ul>
-<li><p><a href="./projects/cobaltdrc.html">Cobalt Extraction in the Democratic Republic of the Congo</a></p></li>
-<li><p><a href="./projects/caffeinemusic.html">The Effect of Caffeine and Music Genre on Heart Rate</a></p></li>
-<li><p><a href="./projects/obesity.html">Predictive Analysis of Obesity Diagnostic</a></p></li>
-<li><p><a href="./projects/alcoholconsumption.html">Predicting Student Alcohol Consumption</a></p></li>
-</ul>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Naina Sharma, Ava Adlao, Ray Min, Jinhyo Lee, Michael Gureghian </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 9, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>This study investigates the <strong>factors influencing student alcohol consumption</strong> among Portuguese secondary school students. Using a dataset of <strong>1,044 students</strong>, we explore <strong>demographic, academic, social, and familial influences</strong> on weekday alcohol consumption. Our final model, a <strong>logistic regression with 10 predictors</strong>, achieved an accuracy of <strong>76.34%</strong>.</p>
+<hr>
 </section>
-<section id="relevant-coursework" class="level4">
-<h4 class="anchored" data-anchor-id="relevant-coursework">Relevant coursework</h4>
+<section id="research-goals" class="level1">
+<h1>Research Goals</h1>
+<ol type="1">
+<li><strong>Identify key predictors</strong> of adolescent alcohol consumption.</li>
+<li><strong>Evaluate statistical models</strong> to predict weekday alcohol consumption.</li>
+<li><strong>Provide insights</strong> to support targeted interventions for high-risk students.</li>
+</ol>
+<hr>
+</section>
+<section id="data-overview" class="level1">
+<h1>Data Overview</h1>
 <ul>
-<li><p>Pol Sci 170A: Applied Research Methods</p></li>
-<li><p>Stats 10. Introduction to Statistical Reasoning</p></li>
-<li><p>Stats 20. Introduction to Statistical Programming with R</p></li>
-<li><p>Stats 100A. Introduction to Probability</p></li>
-<li><p>Stats 100B. Introduction to Mathematical Statistics</p></li>
-<li><p>Stats 100C. Linear Models</p></li>
-<li><p>Stats 101A. Introduction to Data Analysis and Regression</p></li>
-<li><p>Stats 101B. Introduction to Design and Analysis of Experiment</p></li>
-<li><p>Stats 101C. Introduction to Statistical Models and Data Mining</p></li>
-<li><p>Stats 102A. Introduction to Computational Statistics with R</p></li>
-<li><p>Stats 102B. Introduction to Computation and Optimization for Statistics</p></li>
-<li><p>Stats 102C. Introduction to Monte Carlo Methods</p></li>
-<li><p>Stats 112. Statistics: Window to Understanding Diversity</p></li>
-<li><p>Stats M169. Causality X</p></li>
+<li><strong>Dataset</strong>: Survey data from <strong>1,044 students</strong> in Portugal (2008).</li>
+<li><strong>Primary Outcome Variable</strong>:
+<ul>
+<li><strong>Weekday alcohol consumption (Dalc)</strong> (1 = very low, 5 = very high).</li>
+</ul></li>
+<li><strong>Categories of Predictors</strong>:
+<ul>
+<li><strong>Demographics</strong> (e.g., age, sex, parental education).</li>
+<li><strong>Academic Performance</strong> (e.g., grades, absences).</li>
+<li><strong>Social Relationships</strong> (e.g., time with friends, family relationships).</li>
+<li><strong>Educational Support</strong> (e.g., study time, extra classes).</li>
+</ul></li>
 </ul>
+<hr>
+</section>
+<section id="exploratory-data-analysis-eda" class="level1">
+<h1>Exploratory Data Analysis (EDA)</h1>
+<p>📊 <strong>Key Findings:</strong> - <strong>Alcohol consumption is higher on weekends</strong> than weekdays. - <strong>Male students consume more alcohol</strong> than female students. - <strong>Frequent social outings &amp; absences</strong> correlate positively with alcohol consumption. - <strong>Higher grades &amp; study time</strong> correlate negatively with alcohol consumption. - <strong>Family relationships</strong> are a <strong>protective factor</strong> against alcohol use.</p>
+<p>📈 <strong>Strongest Correlations:</strong> - <strong>Weekday &amp; Weekend Alcohol Use</strong> (r = 0.63) → Students who drink on weekends tend to drink on weekdays. - <strong>Going Out (goout) &amp; Alcohol Use</strong> (r = 0.32-0.35) → More social activity increases alcohol consumption. - <strong>Parental Education &amp; Alcohol Use</strong> (r ≈ -0.10) → Higher maternal education slightly reduces drinking likelihood.</p>
+<hr>
+</section>
+<section id="model-selection" class="level1">
+<h1>Model Selection</h1>
+<p>We tested multiple models to predict weekday alcohol consumption:</p>
+<p>✅ <strong>1. Ordinal Regression (Initial Model)</strong> - Used <strong>Dalc (1-5)</strong> as an <strong>ordinal</strong> outcome. - <strong>Failed due to class imbalance</strong> (mostly predicting “1”). - <strong>Revised into binary classification</strong> (low vs.&nbsp;high alcohol consumption).</p>
+<p>✅ <strong>2. Logistic Regression (Final Model)</strong> - Converted <strong>Dalc into binary (0 = Low, 1 = High)</strong>. - Used <strong>stepwise selection &amp; random forest variable importance</strong> for feature selection. - Achieved <strong>76.34% accuracy</strong>.</p>
+<hr>
+</section>
+<section id="final-model-logistic-regression" class="level1">
+<h1>Final Model: Logistic Regression</h1>
+<p>📌 <strong>Key Predictors (10 Features Selected):</strong></p>
+<ol type="1">
+<li><strong>Demographics</strong>:
+<ul>
+<li>Male students <strong>more likely</strong> to drink.<br>
+</li>
+<li>Students with mothers in <strong>health professions drink less</strong>.<br>
+</li>
+<li>Students with <strong>mothers as primary guardians drink less</strong>.</li>
+</ul></li>
+<li><strong>Academic &amp; Social Factors</strong>:
+<ul>
+<li><strong>More absences &amp; going out</strong> → <strong>higher alcohol use</strong>.<br>
+</li>
+<li><strong>Higher grades &amp; study time</strong> → <strong>lower alcohol use</strong>.<br>
+</li>
+<li><strong>Better family relationships</strong> → <strong>lower alcohol use</strong>.</li>
+</ul></li>
+</ol>
+<p>🎯 <strong>Final Accuracy: 76.34%</strong><br>
+📊 <strong>AUC (Area Under Curve): 0.7686</strong></p>
+<hr>
+</section>
+<section id="key-findings-implications" class="level1">
+<h1>Key Findings &amp; Implications</h1>
+<p>✅ <strong>Risk Factors for Alcohol Use</strong>: - <strong>Male students</strong> are at higher risk. - <strong>Social behaviors (going out, absences)</strong> increase likelihood. - <strong>Poor family relationships &amp; low study time</strong> correlate with higher drinking.</p>
+<p>✅ <strong>Protective Factors</strong>: - <strong>Higher parental education &amp; parental involvement</strong> reduce alcohol consumption. - <strong>Higher grades &amp; study time</strong> reduce likelihood of drinking.</p>
+<p>🔍 <strong>Limitations</strong>: - Data is from <strong>2008</strong>; social behaviors may have changed. - Class imbalance in alcohol consumption skews predictions. - Further research could improve <strong>model interpretability &amp; generalizability</strong>.</p>
+<hr>
+<p><a href="../projects/Stats 112 Final Paper.pdf">📄 <strong>Download Full Report</strong></a></p>
+<p>Reach out to me directly for full R Code.</p>
+<hr>
 
 
 </section>

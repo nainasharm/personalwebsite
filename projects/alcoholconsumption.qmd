@@ -103,5 +103,7 @@ We tested multiple models to predict weekday alcohol consumption:
 
 [📄 **Download Full Report**](/projects/Stats 112 Final Paper.pdf)
 
+Reach out to me directly for full R Code.
+
 ---
 
